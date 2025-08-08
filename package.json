@@ -1,0 +1,54 @@
+{
+  "name": "twitterapi-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for TwitterAPI.io - Access Twitter data through a unified API interface",
+  "author": "MCP Developer",
+  "license": "MIT",
+  "main": "build/index.js",
+  "type": "commonjs",
+  "bin": {
+    "twitterapi-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "dev": "npm run build && node build/index.js",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "build/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "server",
+    "twitter",
+    "api",
+    "social",
+    "data",
+    "twitterapi.io",
+    "claude",
+    "llm"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "axios": "^1.11.0",
+    "https-proxy-agent": "^7.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/twitterapi-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/twitterapi-mcp/issues"
+  },
+  "homepage": "https://github.com/yourusername/twitterapi-mcp#readme"
+}
